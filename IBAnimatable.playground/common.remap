@@ -1,2 +1,14 @@
 [
+ {
+  "file": "/Users/javiergarcia/IBAnimatable/IBAnimatable.playground/Sources/common.swift",
+  "offset": 319,
+  "remove": 6,
+  "text": "open",
+ },
+ {
+  "file": "/Users/javiergarcia/IBAnimatable/IBAnimatable.playground/Sources/common.swift",
+  "offset": 755,
+  "remove": 6,
+  "text": "open",
+ }
 ]
