@@ -47,7 +47,7 @@ public enum PresentationModalPosition: IBEnum {
 
 public extension PresentationModalPosition {
   /**
-   Initializes a swift `PresentationModalPosition` with provided optional string
+   Initializes a swift `PresentationModalPosition` with provided optional string. Default value is `center`. If string is nil or doesn't match any case, default value is used.
    
    - Parameter string: The optional string to be converted into `PresnetationModalPosition`.
    */
@@ -57,9 +57,7 @@ public extension PresentationModalPosition {
       return 
     }
     
-    let nameAndParames = MaskType.extractNameAndParams(from: string)
-    let name = nameAndParames.name
-    let params = nameAndParames.params
+    let (name, params) = PresentationModalPosition.extractNameAndParams(from: string)
     let point = CGPoint(x: params[safe: 0]?.toDouble() ?? 0, y: params[safe: 1]?.toDouble() ?? 0)
     
     switch name {
